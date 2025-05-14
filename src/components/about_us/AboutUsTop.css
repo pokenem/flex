@@ -1,63 +1,83 @@
+/* в самом начале вашего CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .about-us-top {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
+/* Десктоп */
+/* Десктоп */
 .image-stack-container {
     position: relative;
     width: 50%;
+    /* НЕ скрываем по высоте — пусть контейнер «тянется» под заднее изображение */
     overflow: hidden;
+    border-radius: 12px;
 }
 
-.image-stack-container .image {
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
-
-.image.back {
-    top: 0;
-    left: 0;
-    width: 100%;
+/* Заднее изображение делаем статичным, чтобы задать контейнеру высоту */
+.image-stack-container .image.back {
+    position: relative;   /* вместо absolute */
+    display: block;       /* чтобы занять место в потоке */
+    margin-bottom: 2rem;
+    margin-right: 2rem; /* центр по горизонтали, если нужно */
+    width: 90%;          /* чуть больше контейнера */
     opacity: 0.7;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
 }
 
-.image.front {
-    top: 50px;
-    left: 50px;
-    width: 100%;
+/* Переднее оставляем абсолютным, поверх контейнера */
+.image-stack-container .image.front {
+    position: absolute;
+    top: 3rem;            /* смещение вниз */
+    left: 5rem;           /* смещение вправо */
+    width: 85%;           /* чуть уже заднего */
     z-index: 2;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
 }
 
+
+/* Текстовая часть справа */
 .text-container {
     width: 50%;
     padding: 1rem;
 }
 
+/* Мобильная версия */
 @media (max-width: 768px) {
     .about-us-top {
         flex-direction: column;
     }
 
     .image-stack-container {
+        position: relative; /* чтобы absolute-изображение в нём работало */
         width: 100%;
-        height: auto;
+        overflow: hidden;
+        height: auto;       /* не фиксируем высоту — авто под контент */
     }
 
-    .image.back {
-        position: relative;
+    /* Заднее на всю ширину */
+    .image-stack-container .image.back {
+        position: relative; /* чтобы оно встало на своё место */
         width: 100%;
-        opacity: 0.7;
-        top: 0;
         left: 0;
+        top: 0;
+        opacity: 0.7;
     }
 
-    .image.front {
-        position: relative;
-        width: 70%;
-        top: -70%;
-        margin: 0 auto;
+    /* Переднее поверх: абсолютное, чуть уже, со смещением вниз */
+    .image-stack-container .image.front {
+        position: absolute;
+        top: 3rem;         /* чуть опустим вниз */
+        left: 1.2rem;       /* немного отступим от правого края */
+        width: 90%;
     }
 
     .text-container {

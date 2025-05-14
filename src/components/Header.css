@@ -68,18 +68,23 @@
 
 @media (max-width: 768px) {
     .nav {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: rgba(255, 255, 255, 0.5);
+        position: fixed;      /* instead of absolute */
+        top: 0;               /* pin to top */
+        right: 0;             /* pin to right */
+        height: 100vh;        /* full‐height panel */
+        background: rgba(255, 255, 255, 0.85);
         flex-direction: column;
         width: 200px;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+        z-index: 1000;        /* sit above other content */
     }
+
+    /* when open, slide back into view */
     .nav.open {
         transform: translateX(0);
     }
+
     .menu-toggle {
         display: block;
     }

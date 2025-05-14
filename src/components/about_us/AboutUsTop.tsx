@@ -6,12 +6,12 @@ const AboutUsTop: React.FC = () => {
         <section className="about-us-top">
             <div className="image-stack-container">
                 <img
-                    src={process.env.PUBLIC_URL + '/assets/icons/img.png'}
+                    src={process.env.PUBLIC_URL + '/assets/about1.jpg'}
                     alt="Background"
                     className="image back"
                 />
                 <img
-                    src={process.env.PUBLIC_URL + '/assets/icons/img.png'}
+                    src={process.env.PUBLIC_URL + '/assets/about2.jpg'}
                     alt="Foreground"
                     className="image front"
                 />

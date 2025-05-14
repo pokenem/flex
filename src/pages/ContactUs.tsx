@@ -1,5 +1,4 @@
 import React from 'react';
-import Contact from "../components/Contact";
 import {motion} from "framer-motion";
 
 const ContactUs: React.FC = () => {
@@ -8,7 +7,7 @@ const ContactUs: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
     >
-        <Contact />
+
     </motion.div>;
 };
 
