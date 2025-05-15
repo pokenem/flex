@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom'; // ← добавили Link
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -7,10 +7,8 @@ const Header: React.FC = () => {
     const navRef = useRef<HTMLElement>(null);
     const toggleMenu = () => setIsOpen(prev => !prev);
 
-    // Закрываем меню при клике вне его области
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
-            // Если меню открыто и клик был НЕ внутри navRef
             if (isOpen && navRef.current && !navRef.current.contains(event.target as Node)) {
                 setIsOpen(false);
             }
@@ -24,25 +22,24 @@ const Header: React.FC = () => {
 
     return (
         <header className="header">
-            <div className="logo-section">
+            <Link to={"/"} className={"logo-section"}>
                 <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="logo" className="logo" />
                 <div className="company-name">Flexibility Services</div>
-            </div>
+            </Link>
 
-            {/* Привязываем ref к nav */}
             <nav ref={navRef} className={`nav ${isOpen ? 'open' : ''}`}>
                 {[
-                    { to: '/', label: "Home" },
-                    { to: '/services', label: "Services" },
-                    { to: '/about-us', label: "About Us" },
-                    { to: '/contact-us', label: "Contact Us" },
-                    { to: '/terms', label: "T&C" },
+                    { to: '/', label: "Domov" },
+                    { to: '/services', label: "Služby" },
+                    { to: '/about-us', label: "O nás" },
+                    { to: '/contact-us', label: "Kontakt" },
+                    { to: '/terms', label: "Obchodné podmienky" },
                 ].map(({ to, label }) => (
                     <NavLink
                         onClick={() => setIsOpen(false)}
                         key={to}
                         to={to}
-                        className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
+                        className={({ isActive }) => `nav-link${isActive ? ' active' : ''} font-medium`}
                         end
                     >
                         {label}

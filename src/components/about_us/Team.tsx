@@ -17,42 +17,42 @@ const members: Member[] = [
     {
         name: 'Jane Smith',
         assistant: 'Jake Wilson',
-        position: 'Head of Customer Service',
+        position: 'Vedúca zákazníckeho servisu',
         social: {instagram: '#', facebook: '#', twitter: '#', linkedin: '#'}
     },
     {
         name: 'David Brown',
         assistant: 'Linda Taylor',
-        position: 'Lead Technician',
+        position: 'Hlavný technik',
         social: {instagram: '#', facebook: '#', twitter: '#', linkedin: '#'}
     },
     {
         name: 'Emily Johnson',
         assistant: 'Chris Anderson',
-        position: 'Marketing Manager',
+        position: 'Marketingová manažérka',
         social: {instagram: '#', facebook: '#', twitter: '#', linkedin: '#'}
     },
     {
         name: 'Michael Lee',
         assistant: 'Amy Roberts',
-        position: 'Senior Mechanic',
+        position: 'Senior mechanik',
         social: {instagram: '#', facebook: '#', twitter: '#', linkedin: '#'}
     }
 ];
 
 const Team: React.FC = () => (
     <div className="team-box">
-        <h2 className="head">Meet our team</h2>
+        <h2 className="text-4xl font-medium">Zoznámte sa s naším tímom</h2>
         <div className="team-container">
             <section className="team-section">
                 <div className="team-grid">
                     {members.map((m, i) => (
                         <div className="team-card" key={i}>
                             <div className="avatar">
-                                <img src={process.env.PUBLIC_URL +"/assets/face" + (i + 1) + ".png"} alt="Front" className="image" />
+                                <img src={process.env.PUBLIC_URL + "/assets/face" + (i + 1) + ".png"} alt="Portrét" className="image" />
                             </div>
                             <h3>{m.name}</h3>
-                            <p className="assistant">{m.assistant}</p>
+                            <p className="assistant">Asistent: {m.assistant}</p>
                             <p className="position">{m.position}</p>
                             <div className="social-icons">
                                 <a href={m.social.instagram} aria-label="Instagram">📸</a>
@@ -65,11 +65,10 @@ const Team: React.FC = () => (
                 </div>
             </section>
             <section className="image-section">
-                <img src={process.env.PUBLIC_URL + "/assets/lom.png"} alt="Front" className="image" />
+                <img src={process.env.PUBLIC_URL + "/assets/lom.png"} alt="Obrázok" className="image" />
             </section>
         </div>
     </div>
-
 );
 
 export default Team;

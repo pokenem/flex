@@ -1,20 +1,64 @@
+/* Обязательные стили для высоты */
+html, body, #root {
+    height: 100%;
+}
+
+/* Основная обёртка приложения */
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.app-main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 1200px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 12px;
+    }
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Rubick', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     line-height: 1.6;
     color: #000;
 }
 
 html, body {
+    height: 100%;
     overflow-x: hidden;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubick', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     margin: 0 0 1rem;
     color: #000;
@@ -26,9 +70,10 @@ a {
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem;
 }
 
+/* Utility classes */
 .u-text-center {
     text-align: center;
 }
@@ -36,3 +81,38 @@ main {
 .u-mb-1 {
     margin-bottom: 1rem;
 }
+
+/* Text sizes */
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+
+/* Font weights */
+.font-thin { font-weight: 100; }
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+
+/* Base paddings in rem */
+.p-0   { padding: 0; }
+.p-1   { padding: 0.5rem; }
+.p-2   { padding: 1rem; }
+.p-3   { padding: 1.5rem; }
+.p-4   { padding: 2rem; }
+
+.px-1  { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-2  { padding-left: 1rem; padding-right: 1rem; }
+.px-3  { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-4  { padding-left: 2rem; padding-right: 2rem; }
+
+.py-1  { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-2  { padding-top: 1rem; padding-bottom: 1rem; }
+.py-3  { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-4  { padding-top: 2rem; padding-bottom: 2rem; }
+

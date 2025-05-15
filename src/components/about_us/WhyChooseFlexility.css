@@ -1,0 +1,48 @@
+.why-choose {
+    padding: 4rem;
+    background-color: rgb(255,255,255,0.3);
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.why-choose__title {
+    margin-bottom: 3rem;
+}
+
+.why-choose__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.why-choose__card {
+    background-color: rgb(255,255,255,0.7);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.3s;
+}
+
+.why-choose__card:hover {
+    background-color: rgb(255,255,255,0.85);
+}
+
+.why-choose__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.why-choose__card-title {
+    margin-bottom: 0.5rem;
+}
+
+.why-choose__card-desc {
+}
+
+/* Для экранов до 640px — 2 карточки в ряд */
+@media (max-width: 768px) {
+    .why-choose__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

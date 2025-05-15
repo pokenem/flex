@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Team from '../components/about_us/Team';
 import AutoSlider from '../components/about_us/AutoSlider';
 import AboutUsTop from "../components/about_us/AboutUsTop";
+import WhyChooseFlexility from "../components/about_us/WhyChooseFlexility";
 
 const AboutUs: React.FC = () => (
     <div className="about-container">
@@ -13,6 +14,15 @@ const AboutUs: React.FC = () => (
         >
             <AboutUsTop />
         </motion.div>
+        <div className={'py-2'}></div>
+        <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+        >
+            <WhyChooseFlexility />
+        </motion.div>
+
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -20,13 +30,7 @@ const AboutUs: React.FC = () => (
         >
             <Team />
         </motion.div>
-        <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-        >
-            <AutoSlider />
-        </motion.div>
+
     </div>
 );
 

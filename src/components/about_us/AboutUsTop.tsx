@@ -7,20 +7,22 @@ const AboutUsTop: React.FC = () => {
             <div className="image-stack-container">
                 <img
                     src={process.env.PUBLIC_URL + '/assets/about1.jpg'}
-                    alt="Background"
+                    alt="Pozadie"
                     className="image back"
                 />
                 <img
                     src={process.env.PUBLIC_URL + '/assets/about2.jpg'}
-                    alt="Foreground"
+                    alt="Popredie"
                     className="image front"
                 />
             </div>
             <div className="text-container">
-                <h2>About Us</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
-                    odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
+                <h2 className="text-4xl font-medium">O nás</h2>
+                <p className="text-xl font-light">
+                    Spoločnosť Flexility services s.r.o. je spoľahlivým partnerom v oblasti podpory
+                    výrobných a logistických procesov predovšetkým v automobilovom priemysle. Poskytujeme
+                    komplexné služby s dôrazom na kvalitu, precíznosť a rýchlosť dodania, ktoré
+                    sú nevyhnutné v dynamickom a náročnom prostredí automotive výroby.
                 </p>
             </div>
         </section>

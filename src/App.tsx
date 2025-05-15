@@ -9,9 +9,9 @@ import ContactUs from './pages/ContactUs';
 import Terms from './pages/Terms';
 
 const App: React.FC = () => (
-    <>
+    <div className="app-layout">
         <Header />
-        <main>
+        <main className="app-main">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/services" element={<Services />} />
@@ -21,7 +21,7 @@ const App: React.FC = () => (
             </Routes>
         </main>
         <Footer />
-    </>
+    </div>
 );
 
 export default App;
