@@ -7,7 +7,6 @@ const ContactUs: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
     >
-
     </motion.div>;
 };
 

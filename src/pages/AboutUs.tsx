@@ -4,6 +4,7 @@ import Team from '../components/about_us/Team';
 import AutoSlider from '../components/about_us/AutoSlider';
 import AboutUsTop from "../components/about_us/AboutUsTop";
 import WhyChooseFlexility from "../components/about_us/WhyChooseFlexility";
+import ContactCards from "../components/about_us/ContactCards";
 
 const AboutUs: React.FC = () => (
     <div className="about-container">
@@ -29,6 +30,14 @@ const AboutUs: React.FC = () => (
             transition={{ duration: 2 }}
         >
             <Team />
+        </motion.div>
+
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+        >
+            <ContactCards />
         </motion.div>
 
     </div>
