@@ -6,11 +6,11 @@ const ContactCards: React.FC = () => {
     const info = [
         {
             icon: <MapPin />,
-            title: 'Address',
+            title: 'Adresa',
             details: (
                 <>
                     1652 Cordia Cir<br />
-                    Newton, North Carolina(NC), 28658
+                    Newton, Severná Karolína (NC), 28658
                 </>
             ),
         },
@@ -21,7 +21,7 @@ const ContactCards: React.FC = () => {
         },
         {
             icon: <Phone/>,
-            title: 'Phone',
+            title: 'Telefón',
             details: <a href="tel:+13182859856">(318) 285-9856</a>,
         },
     ];
