@@ -1,0 +1,122 @@
+.contacts-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 1rem;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #000; /* или другой подходящий цвет */
+}
+
+
+.contacts-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.social-list {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.social-list a {
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.social-list a:hover {
+    color: #ff5c5c; /* или брендированный цвет */
+}
+
+
+.contacts-info{
+
+}
+.contacts-map {
+    flex: 1 1 48%;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li h4 {
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.contacts-map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* ✅ Mobile Styles */
+@media (max-width: 768px) {
+    .contacts-wrapper {
+        flex-direction: column;
+    }
+
+    .contacts-info,
+    .contacts-map {
+        flex: 1 1 100%;
+    }
+
+    .social-list {
+        justify-content: center;
+    }
+
+    .contacts-title {
+        font-size: 2rem;
+    }
+}
