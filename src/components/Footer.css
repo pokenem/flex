@@ -23,6 +23,24 @@
     transition: transform 0.3s ease;
 }
 
+.social-list {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.social-list a {
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.social-list a:hover {
+    color: #ff5c5c; /* или брендированный цвет */
+}
+
+
 .footer-right img:hover {
     transform: scale(1.2);
 }

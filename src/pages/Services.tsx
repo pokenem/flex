@@ -1,3 +1,4 @@
 import React from 'react';
-const Services: React.FC = () => <h1>Services Page</h1>;
+import ServicesPage from "../components/services/ServicesPage";
+const Services: React.FC = () => <ServicesPage/>;
 export default Services;

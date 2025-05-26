@@ -1,6 +1,5 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import ContactUsComponent from "../components/contact_us/ContactUsComponent";
 import Contacts from "../components/contact_us/Contacts";
 
 const ContactUs: React.FC = () => {
