@@ -23,7 +23,7 @@ export const ServiceProvider: React.FC<{ children: React.ReactNode }> = ({ child
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch('http://212.57.37.107:1337/api/servicenos?populate=*');
+                const res = await fetch('http://212.57.37.107:1337/api/services?populate=*');
                 const json = await res.json();
 
                 const parsed = json.data.map((item: any): ServiceItem => ({
