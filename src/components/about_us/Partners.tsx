@@ -31,7 +31,7 @@ const Partners: React.FC = () => {
                         {companies.map(c => (
                             <div key={c.id} className="logo-item">
                                 <img src={c.logoUrl} alt={c.name} className="logo-img" />
-                                <span className="logo-name">{c.name}</span>
+                                <span className="logo-name font-light">{c.name}</span>
                             </div>
                         ))}
                     </div>
