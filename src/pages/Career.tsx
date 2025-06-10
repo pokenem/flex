@@ -53,10 +53,10 @@ const Career: React.FC = () => {
     return (
         <div className="app-layout">
             <main className="app-main">
-                <h1 className="text-4xl font-bold u-mb-2 u-text-center">BEBE</h1>
+                <h1 className="text-4xl font-bold u-mb-2 u-text-center">Vacancies</h1>
                 <ul className="career-list">
                     {jobs.length === 0 ? (
-                        <li className="u-text-center">No </li>
+                        <li className="u-text-center">No vacancies now</li>
                     ) : (
                         jobs.map(job => (
                             <motion.li
