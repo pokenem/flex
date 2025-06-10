@@ -1,0 +1,24 @@
+/* Career.css */
+
+.career-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.career-list .job-item {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.career-list .job-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.career-list .job-item hr {
+    display: none;
+}

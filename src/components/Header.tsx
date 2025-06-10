@@ -24,7 +24,7 @@ const Header: React.FC = () => {
         <header className="header">
             <Link to={"/"} className={"logo-section"}>
                 <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="logo" className="logo" />
-                <div className="company-name">Flexibility Services</div>
+                <div className="company-name">Flexility Services</div>
             </Link>
 
             <nav ref={navRef} className={`nav ${isOpen ? 'open' : ''}`}>
@@ -34,6 +34,7 @@ const Header: React.FC = () => {
                     { to: '/about-us', label: "O nás" },
                     { to: '/contact-us', label: "Kontakt" },
                     { to: '/terms', label: "Obchodné podmienky" },
+                    { to: '/jobs', label: "Kariera" },
                 ].map(({ to, label }) => (
                     <NavLink
                         onClick={() => setIsOpen(false)}

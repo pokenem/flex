@@ -8,6 +8,8 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import { ServiceProvider } from './context/ServiceContext';
 import Terms from './pages/Terms';
+import Career from "./pages/Career";
+import JobDetails from "./components/JobDetails";
 
 const App: React.FC = () => (
     <ServiceProvider>
@@ -20,6 +22,8 @@ const App: React.FC = () => (
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/terms" element={<Terms />} />
+                    <Route path="/jobs" element={<Career />} />
+                    <Route path="/jobs/:slug" element={<JobDetails />} />
                 </Routes>
             </main>
             <Footer />

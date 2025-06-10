@@ -1,0 +1,75 @@
+.job-page {
+    background: rgb(255,255,255,0.75);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+.job-page h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
+}
+.job-page h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+    opacity: 0.9;
+}
+.job-page .description {
+    font-size: 1.125rem;
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+}
+.job-page .info-card {
+    background-color: rgba(255,255,255,0.75);
+    color: #000;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.job-page .info-card div {
+    margin-bottom: 0.75rem;
+}
+.job-page .info-card div strong {
+    font-weight: 700;
+}
+.job-page section {
+    margin-bottom: 2.5rem;
+}
+.job-page section h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1.25rem;
+}
+.job-page ul {
+    list-style: disc inside;
+}
+.job-page ul li {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+.job-page ul li strong {
+    color: #000;
+    font-weight: 600;
+}
+.job-page .divider {
+    border-top: 1px solid rgba(255,255,255,0.5);
+    margin: 3rem 0;
+}
+.job-page .contact {
+}
+.job-page .contact h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.job-page .contact p strong {
+    color: #000;
+    font-weight: 600;
+}
+.job-page .contact a {
+    opacity: 0.9;
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
