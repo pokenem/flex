@@ -7,6 +7,7 @@ import OnasSection from '../components/main/OnasSection';
 import VyhodySection from '../components/main/VyhodySection';
 import ZkusenostiSection from '../components/main/ZkusenostiSection';
 import Contacts from '../components/contact_us/Contacts';
+import {useLocale} from "../context/LocaleContext";
 
 const animationVariants = {
     fadeUp: {
@@ -24,6 +25,7 @@ const animationVariants = {
 };
 
 const HomePage: React.FC = () => {
+    const { t } = useLocale();
     const services = useServices();
     return (
         <div className="home-page">
@@ -43,7 +45,7 @@ const HomePage: React.FC = () => {
             </motion.div>
             <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 0.6}}>
                 <div className="glass-container u-mb-2">
-                    <div className="u-text-center font-bold text-4xl py-4">Naše služby</div>
+                    <div className="u-text-center font-bold text-4xl py-4">{t('services.title')}</div>
                     <Accordion items={services}/>
                 </div>
             </motion.div>

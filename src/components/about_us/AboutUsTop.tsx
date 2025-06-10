@@ -1,7 +1,9 @@
 import React from 'react';
 import './AboutUsTop.css';
+import {useLocale} from "../../context/LocaleContext";
 
 const AboutUsTop: React.FC = () => {
+    const { t } = useLocale();
     return (
         <section className="about-us-top">
             <div className="image-stack-container">
@@ -17,12 +19,9 @@ const AboutUsTop: React.FC = () => {
                 />
             </div>
             <div className="text-container">
-                <h2 className="text-4xl font-medium">O nás</h2>
+                <h2 className="text-4xl font-medium">{t("about.title")}</h2>
                 <p className="text-xl font-light">
-                    Spoločnosť Flexility services s.r.o. je spoľahlivým partnerom v oblasti podpory
-                    výrobných a logistických procesov predovšetkým v automobilovom priemysle. Poskytujeme
-                    komplexné služby s dôrazom na kvalitu, precíznosť a rýchlosť dodania, ktoré
-                    sú nevyhnutné v dynamickom a náročnom prostredí automotive výroby.
+                    {t("about.details")}
                 </p>
             </div>
         </section>

@@ -27,6 +27,7 @@
 }
 
 .accordion-title {
+    color: black;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -43,6 +44,7 @@
 }
 
 .accordion-content {
+    color: black;
     max-height: 0;
     overflow: hidden;
     padding: 0 1rem;

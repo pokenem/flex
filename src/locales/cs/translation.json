@@ -92,7 +92,8 @@
     "title": "Kontaktujte nás"
   },
   "about": {
-    "title": "O nás"
+    "title": "O nás",
+    "details": "Spoločnosť Flexility services s.r.o. je spoľahlivým partnerom v oblasti podpory\n výrobných a logistických procesov predovšetkým v automobilovom priemysle. Poskytujeme\n komplexné služby s dôrazom na kvalitu, precíznosť a rýchlosť dodania, ktoré\n sú nevyhnutné v dynamickom a náročnom prostredí automotive výroby."
   },
   "services": {
     "title": "Naše služby",
