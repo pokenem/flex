@@ -10,25 +10,28 @@ import { ServiceProvider } from './context/ServiceContext';
 import Terms from './pages/Terms';
 import Career from "./pages/Career";
 import JobDetails from "./components/JobDetails";
+import { LocaleProvider } from './context/LocaleContext';
 
 const App: React.FC = () => (
-    <ServiceProvider>
-        <div className="app-layout">
-            <Header />
-            <main className="app-main">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/about-us" element={<AboutUs />} />
-                    <Route path="/contact-us" element={<ContactUs />} />
-                    <Route path="/terms" element={<Terms />} />
-                    <Route path="/jobs" element={<Career />} />
-                    <Route path="/jobs/:slug" element={<JobDetails />} />
-                </Routes>
-            </main>
-            <Footer />
-        </div>
-    </ServiceProvider>
+    <LocaleProvider>
+        <ServiceProvider>
+            <div className="app-layout">
+                <Header />
+                <main className="app-main">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/about-us" element={<AboutUs />} />
+                        <Route path="/contact-us" element={<ContactUs />} />
+                        <Route path="/terms" element={<Terms />} />
+                        <Route path="/jobs" element={<Career />} />
+                        <Route path="/jobs/:slug" element={<JobDetails />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </ServiceProvider>
+    </LocaleProvider>
 );
 
 export default App;

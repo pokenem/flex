@@ -1,0 +1,104 @@
+{
+  "companyName": "Flexility Services",
+  "menu": {
+    "home": "Domů",
+    "services": "Služby",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "terms": "Obchodní podmínky",
+    "jobs": "Kariéra"
+  },
+  "footer": {
+    "contact": "Kontaktuj nás: info@mycompany.com",
+    "copyright": "© 2025 Flexility Services"
+  },
+  "loading": "Načítání...",
+  "error": "Chyba",
+  "vacancies": "Volné pozice",
+  "no_vacancies": "Momentálně žádné volné pozice",
+  "location": "Lokalita",
+  "category": "Kategorie",
+  "level": "Úroveň",
+  "employment": "Typ úvazku",
+  "tasks": "Úkoly",
+  "skills": "Dovednosti",
+  "education": "Vzdělání",
+  "contacts": {
+    "title": "Kontakty",
+    "cards": [
+      {"title": "Adresa"},
+      {"title": "E-mail"},
+      {"title": "Telefon"}
+    ]
+  },
+  "onas": {
+    "subtitle": "Spolehlivý partner pro výrobní a logistické procesy v automotive.",
+    "text": "Poskytujeme komplexní služby s důrazem na kvalitu, preciznost a rychlost dodání. Naše flexibilita a zkušenosti pomáhají udržet plynulost výroby a zvyšovat úroveň kvality u předních světových výrobců i dodavatelů."
+  },
+  "vyhody": {
+    "title": "Výhody Flexility",
+    "0": {"title": "Řešení na míru", "description": "Flexibilně přizpůsobíme naše služby specifickým potřebám a rozsahu vašeho projektu."},
+    "1": {"title": "Excelentní kontrola kvality", "description": "Komplexní vstupní, průběžné i výstupní kontroly s precizní dokumentací."},
+    "2": {"title": "Rychlý rework", "description": "Okamžité zásahy na místě nebo v našem zázemí pro opravu chyb a udržení výroby."},
+    "3": {"title": "Technická podpora", "description": "Odborná pomoc při PPAP, FMEA, podpoře linek a tvorbě dokumentace."}
+  },
+  "zkusenosti": {
+    "title": "Zkušenosti našeho personálu",
+    "0": {
+      "title": "OEM",
+      "text": "Náš tým tvoří odborníci s praktickými zkušenostmi přímo z provozu předních světových výrobců automobilů (ŠKODA AUTO, Jaguar Land Rover, BMW, Mercedes-Benz), kde jsme se aktivně podíleli na:<ul><li>zavádění nových výrobních projektů (launch support),</li><li>analýze a řešení kvalitativních odchylek (reklamace, 8D reporty),</li><li>kontrole kvality a rework činnostech ve vysokém taktu výroby,</li><li>podpoře technických oddělení při implementaci změn (engineering change management),</li><li>komunikaci se zákazníky a dodavateli v rámci procesů jako PPAP, APQP, FMEA nebo VDA 6.3 auditů.</li></ul>Díky těmto zkušenostem rozumíme vysokým nárokům OEM výroby na preciznost, rychlost reakce a schopnost samostatně řešit problémy přímo v provozu. Naši pracovníci jsou zvyklí fungovat v prostředí s přísnými standardy kvality a důsledně dodržovat pravidla bezpečnosti, pořádku a organizace práce."
+    },
+    "1": {
+      "title": "TIER 1",
+      "text": "Zaměstnanci společnosti Flexility services s.r.o. přinášejí bohaté zkušenosti nejen z výrobních závodů předních světových automobilek, ale i z provozů klíčových Tier 1 dodavatelů (Faurecia, Magna, Bosch, Continental, Lear, Adient aj.).<br/><ul><li>řízení kvality a zákaznického servisu,</li><li>kontroly a měření dílů dle výkresové dokumentace a CAD,</li><li>řešení neshod a vedení reklamací (8D, Ishikawa, 5 Why),</li><li>tvorby a úprav FMEA, kontrolních plánů (CP), pracovních instrukcí,</li><li>zavádění nových projektů dle norem IATF 16949 a VDA 6.3,</li><li>logistiky a podpory výroby (balení, značení, materiálový tok).</li></ul>Díky těmto zkušenostem dokážeme rychle pochopit specifika jednotlivých výrobních procesů a přizpůsobit se jak náročnému prostředí OEM, tak i flexibilním požadavkům dodavatelských řetězců Tier 1."
+    }
+  },
+  "home": {
+    "services_title": "Naše služby"
+  },
+  "terms": {
+    "title": "Všeobecné obchodní podmínky",
+    "sections": [
+      {"title": "1. Úvod", "text": "Tyto všeobecné obchodní podmínky upravují používání této webové stránky a podmínky poskytování našich služeb. Vstupem na tuto stránku souhlasíte s těmito podmínkami v plném rozsahu."},
+      {"title": "2. Služby", "text": "Naše společnost poskytuje služby v oblasti technické podpory, marketingu a zákaznického servisu. Vyhrazujeme si právo kdykoli změnit nebo pozastavit poskytování služeb bez předchozího upozornění."},
+      {"title": "3. Ochrana osobních údajů", "text": "Vaše osobní údaje jsou zpracovávány v souladu s platnými zákony ČR a GDPR. Více informací naleznete v našich zásadách ochrany osobních údajů."},
+      {"title": "4. Odpovědnost", "text": "Nejsme odpovědní za jakékoli přímé nebo nepřímé škody vzniklé používáním této stránky nebo našich služeb."},
+      {"title": "5. Kontakt", "text": "V případě dotazů nás můžete kontaktovat prostřednictvím kontaktního formuláře nebo e-mailem na info@mycompany.com."}
+    ]
+  },
+  "why": {
+    "title": "Proč si vybrat Flexility",
+    "items": [
+      {"title": "Řešení na míru", "desc": "Flexibilně přizpůsobíme naše služby specifickým potřebám a rozsahu vašeho projektu."},
+      {"title": "Excelentní kontrola kvality", "desc": "Komplexní vstupní, průběžné i výstupní kontroly s precizní dokumentací."},
+      {"title": "Rychlý rework", "desc": "Okamžité zásahy na místě nebo v našem zázemí pro opravu chyb a udržení výroby."},
+      {"title": "Technická podpora", "desc": "Odborná pomoc při PPAP, FMEA, podpoře linek a tvorbě dokumentace."}
+    ]
+  },
+  "team": {
+    "title": "Seznamte se s naším týmem",
+    "assistant": "Asistent",
+    "position": "Pozice",
+    "avatarAlt": "Portrét",
+    "imageAlt": "Obrázek",
+    "members": [
+      {"name": "Jane Smith", "assistant": "Jake Wilson", "position": "Vedoucí zákaznického servisu"},
+      {"name": "David Brown", "assistant": "Linda Taylor", "position": "Hlavní technik"},
+      {"name": "Emily Johnson", "assistant": "Chris Anderson", "position": "Marketingová manažerka"},
+      {"name": "Michael Lee", "assistant": "Amy Roberts", "position": "Senior mechanik"}
+    ]
+  },
+  "contact": {
+    "title": "Kontaktujte nás"
+  },
+  "about": {
+    "title": "O nás"
+  },
+  "services": {
+    "title": "Naše služby",
+    "subtitle": "Komplexní nabídka pro vaše podnikání."
+  },
+  "partners": {
+    "title": "Naši partneři"
+  }
+} 

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ServiceItem } from "../../context/ServiceContext";
 import "./ServiceCard.css"
+import { useLocale } from '../../context/LocaleContext';
 
 interface ServiceCardProps extends ServiceItem {
     index: number;
@@ -11,7 +12,6 @@ interface ServiceCardProps extends ServiceItem {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ id, title, description, imageUrl, index }) => {
     const navigate = useNavigate();
-
     const isEven = index % 2 === 0;
 
     return (
@@ -32,7 +32,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ id, title, description, image
                     dangerouslySetInnerHTML={{ __html: description }}
                 />
                 <button onClick={() => navigate('/contact-us')} className="contact-button">
-                    Contact Us
+                    Kontakt
                 </button>
             </div>
         </motion.div>

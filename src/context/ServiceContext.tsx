@@ -1,5 +1,6 @@
 // src/context/ServiceContext.tsx
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useLocale } from './LocaleContext';
 
 export interface ServiceItem {
     id: number;
@@ -19,11 +20,12 @@ export const useServices = () => {
 
 export const ServiceProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [services, setServices] = useState<ServiceItem[]>([]);
+    const { lang } = useLocale();
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch('http://localhost:1337/api/services?populate=*');
+                const res = await fetch(`http://212.57.37.107:1337/api/services?populate=*&locale=${lang}`);
                 const json = await res.json();
 
                 const parsed = json.data.map((item: any): ServiceItem => ({
@@ -32,8 +34,8 @@ export const ServiceProvider: React.FC<{ children: React.ReactNode }> = ({ child
                     description: item.Description.map((block: any) =>
                         block.children?.map((child: any) => child.text).join('')
                     ).join('\n'),
-                    imageUrl: item.Image?.[0]?.url ? `http://localhost:1337${item.Image[0].url}` : '',
-                    iconUrl: item.Icon?.[0]?.url ? `http://localhost:1337${item.Icon[0].url}` : '',
+                    imageUrl: item.Image?.[0]?.url ? `http://212.57.37.107:1337${item.Image[0].url}` : '',
+                    iconUrl: item.Icon?.[0]?.url ? `http://212.57.37.107:1337${item.Icon[0].url}` : '',
                 }));
                 console.log(parsed);
 
@@ -44,7 +46,7 @@ export const ServiceProvider: React.FC<{ children: React.ReactNode }> = ({ child
         };
 
         fetchData();
-    }, []);
+    }, [lang]);
 
     return <ServiceContext.Provider value={services}>{children}</ServiceContext.Provider>;
 };

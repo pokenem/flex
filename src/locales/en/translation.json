@@ -1,11 +1,109 @@
 {
-  "companyName": "Flexibility Services",
+  "companyName": "Flexility Services",
   "menu": {
     "home": "Home",
     "services": "Services",
     "about": "About Us",
     "contact": "Contact Us",
-    "terms": "T&C",
-    "aboba": "aboba"
+    "terms": "Terms & Conditions",
+    "jobs": "Career"
+  },
+  "footer": {
+    "contact": "Contact us: info@mycompany.com",
+    "copyright": "© 2025 Flexility Services"
+  },
+  "loading": "Loading...",
+  "error": "Error",
+  "vacancies": "Vacancies",
+  "no_vacancies": "No vacancies now",
+  "location": "Location",
+  "category": "Category",
+  "level": "Level",
+  "employment": "Employment type",
+  "tasks": "Tasks",
+  "skills": "Skills",
+  "education": "Education",
+  "contact": {
+    "title": "Contact us"
+  },
+  "about": {
+    "title": "About Us"
+  },
+  "onas": {
+    "subtitle": "Reliable partner for production and logistics processes in automotive.",
+    "text": "We provide comprehensive services with an emphasis on quality, precision, and delivery speed. Our flexibility and experience help maintain production flow and increase the quality level for leading global manufacturers and suppliers."
+  },
+  "vyhody": {
+    "title": "Flexility Advantages",
+    "0": {"title": "Tailored Solutions", "description": "We flexibly adapt our services to the specific needs and scope of your project."},
+    "1": {"title": "Excellent Quality Control", "description": "Comprehensive incoming, in-process, and outgoing inspections with precise documentation."},
+    "2": {"title": "Fast Rework", "description": "Immediate interventions on-site or in our facilities to fix errors and keep production running."},
+    "3": {"title": "Technical Support", "description": "Expert assistance with PPAP, FMEA, line support, and documentation creation."}
+  },
+  "zkusenosti": {
+    "title": "Our Staff Experience",
+    "0": {
+      "title": "OEM",
+      "text": "Our team consists of experts with hands-on experience directly from the operations of leading global car manufacturers (ŠKODA AUTO, Jaguar Land Rover, BMW, Mercedes-Benz), where we actively participated in:<ul><li>launching new production projects (launch support),</li><li>analyzing and solving quality deviations (complaints, 8D reports),</li><li>quality control and rework activities in high-speed production,</li><li>supporting technical departments in implementing changes (engineering change management),</li><li>communicating with customers and suppliers in processes such as PPAP, APQP, FMEA, or VDA 6.3 audits.</li></ul>Thanks to this experience, we understand the high demands of OEM production for precision, quick response, and the ability to independently solve problems directly in operation. Our staff are used to working in environments with strict quality standards and consistently follow safety, order, and work organization rules."
+    },
+    "1": {
+      "title": "TIER 1",
+      "text": "Employees of Flexility services s.r.o. bring rich experience not only from the production plants of leading global carmakers but also from the operations of key Tier 1 suppliers (Faurecia, Magna, Bosch, Continental, Lear, Adient, etc.).<br/><ul><li>quality management and customer service,</li><li>inspection and measurement of parts according to drawings and CAD,</li><li>solving nonconformities and handling complaints (8D, Ishikawa, 5 Why),</li><li>creating and modifying FMEA, control plans (CP), work instructions,</li><li>launching new projects according to IATF 16949 and VDA 6.3 standards,</li><li>logistics and production support (packing, labeling, material flow).</li></ul>Thanks to this experience, we can quickly understand the specifics of individual production processes and adapt to both the demanding OEM environment and the flexible requirements of Tier 1 supply chains."
+    }
+  },
+  "home": {
+    "services_title": "Our Services"
+  },
+  "terms": {
+    "title": "General Terms and Conditions",
+    "sections": [
+      {"title": "1. Introduction", "text": "These general terms and conditions govern the use of this website and the terms of our services. By accessing this site, you fully agree to these terms."},
+      {"title": "2. Services", "text": "Our company provides services in technical support, marketing, and customer service. We reserve the right to change or suspend the provision of services at any time without prior notice."},
+      {"title": "3. Data Protection", "text": "Your personal data is processed in accordance with applicable laws and GDPR. More information can be found in our privacy policy."},
+      {"title": "4. Liability", "text": "We are not liable for any direct or indirect damages arising from the use of this site or our services."},
+      {"title": "5. Contact", "text": "If you have any questions, you can contact us via the contact form or by email at info@mycompany.com."}
+    ]
+  },
+  "why": {
+    "title": "Why choose Flexility",
+    "items": [
+      {"title": "Tailored Solutions", "desc": "We flexibly adapt our services to the specific needs and scope of your project."},
+      {"title": "Excellent Quality Control", "desc": "Comprehensive incoming, in-process, and outgoing inspections with precise documentation."},
+      {"title": "Fast Rework", "desc": "Immediate interventions on-site or in our facilities to fix errors and keep production running."},
+      {"title": "Technical Support", "desc": "Expert assistance with PPAP, FMEA, line support, and documentation creation."}
+    ]
+  },
+  "partners": {
+    "title": "Our Partners"
+  },
+  "team": {
+    "title": "Meet our team",
+    "assistant": "Assistant",
+    "position": "Position",
+    "avatarAlt": "Portrait",
+    "imageAlt": "Image",
+    "members": [
+      {"name": "Jane Smith", "assistant": "Jake Wilson", "position": "Head of Customer Service"},
+      {"name": "David Brown", "assistant": "Linda Taylor", "position": "Chief Technician"},
+      {"name": "Emily Johnson", "assistant": "Chris Anderson", "position": "Marketing Manager"},
+      {"name": "Michael Lee", "assistant": "Amy Roberts", "position": "Senior Mechanic"}
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive offer for your business.",
+    "cards": [
+      {"title": "Service 1", "desc": "Description of service 1."},
+      {"title": "Service 2", "desc": "Description of service 2."},
+      {"title": "Service 3", "desc": "Description of service 3."}
+    ]
+  },
+  "contacts": {
+    "title": "Contacts",
+    "cards": [
+      {"title": "Address"},
+      {"title": "Email"},
+      {"title": "Phone"}
+    ]
   }
 }

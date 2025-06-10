@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Contacts.css"
 import { Phone, Clock, MapPin, Mail } from 'lucide-react';
+import { useLocale } from '../../context/LocaleContext';
 
 // Zoznam ikon
 const socialLinks = [
@@ -11,9 +12,10 @@ const socialLinks = [
 ];
 
 const Contacts: React.FC = () => {
+    const { t } = useLocale();
     return (
         <div className="contacts-container">
-            <h2 className="contacts-title">KONTAKTY</h2>
+            <div className="u-text-center font-bold text-4xl pb-2">{t('contacts.title')}</div>
             <div className="contacts-wrapper">
                 <div className="contacts-info">
                     <ul className="info-list">

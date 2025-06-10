@@ -6,6 +6,7 @@ import AboutUsTop from "../components/about_us/AboutUsTop";
 import WhyChooseFlexility from "../components/about_us/WhyChooseFlexility";
 import ContactCards from "../components/about_us/ContactCards";
 import Partners from "../components/about_us/Partners";
+import { useLocale } from '../context/LocaleContext';
 
 const animationVariants = {
     hiddenLeft: { x: -150, opacity: 0, rotate: -5 },
@@ -14,52 +15,55 @@ const animationVariants = {
     visible: { x: 0, opacity: 1, rotate: 0, scale: 1, transition: { duration: 1, ease: 'easeOut' } },
 };
 
-const AboutUs: React.FC = () => (
-    <div className="about-container">
-        <motion.div
-            initial="hiddenLeft"
-            animate="visible"
-            variants={animationVariants}
-        >
-            <AboutUsTop />
-        </motion.div>
+const AboutUs: React.FC = () => {
+    const { t } = useLocale();
+    return (
+        <div className="about-container">
+            <motion.div
+                initial="hiddenLeft"
+                animate="visible"
+                variants={animationVariants}
+            >
+                <AboutUsTop />
+            </motion.div>
 
-        <div className={'py-2'}></div>
+            <div className={'py-2'}></div>
 
-        <motion.div
-            initial="hiddenFade"
-            animate="visible"
-            variants={animationVariants}
-        >
-            <Partners />
-        </motion.div>
+            <motion.div
+                initial="hiddenFade"
+                animate="visible"
+                variants={animationVariants}
+            >
+                <Partners />
+            </motion.div>
 
-        <div className={'py-2'}></div>
+            <div className={'py-2'}></div>
 
-        <motion.div
-            initial="hiddenRight"
-            animate="visible"
-            variants={animationVariants}
-        >
-            <WhyChooseFlexility />
-        </motion.div>
+            <motion.div
+                initial="hiddenRight"
+                animate="visible"
+                variants={animationVariants}
+            >
+                <WhyChooseFlexility />
+            </motion.div>
 
-        <motion.div
-            initial="hiddenFade"
-            animate="visible"
-            variants={animationVariants}
-        >
-            <Team />
-        </motion.div>
+            <motion.div
+                initial="hiddenFade"
+                animate="visible"
+                variants={animationVariants}
+            >
+                <Team />
+            </motion.div>
 
-        <motion.div
-            initial="hiddenFade"
-            animate="visible"
-            variants={animationVariants}
-        >
-            <ContactCards />
-        </motion.div>
-    </div>
-);
+            <motion.div
+                initial="hiddenFade"
+                animate="visible"
+                variants={animationVariants}
+            >
+                <ContactCards />
+            </motion.div>
+        </div>
+    );
+};
 
 export default AboutUs;

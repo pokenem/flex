@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './JobDetails.css';
+import { useLocale } from '../context/LocaleContext';
 
 interface Task { id: number; title: string; details: string; }
 interface Skill { id: number; title: string; details: string; }
@@ -26,11 +27,12 @@ const JobDetails: React.FC = () => {
     const [data, setData] = useState<Posting | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const { t, lang } = useLocale();
 
     useEffect(() => {
         if (!slug) return;
         setLoading(true);
-        fetch(`http://localhost:1337/api/job-postings?filters[slug][$eq]=${slug}&populate[]=tasks&populate[]=skills`)
+        fetch(`http://212.57.37.107:1337/api/job-postings?filters[slug][$eq]=${slug}&populate[]=tasks&populate[]=skills&locale=${lang}`)
             .then(res => {
                 if (!res.ok) throw new Error('Network response was not ok');
                 return res.json();
@@ -41,10 +43,10 @@ const JobDetails: React.FC = () => {
             })
             .catch(err => setError(err.message))
             .finally(() => setLoading(false));
-    }, [slug]);
+    }, [slug, lang]);
 
-    if (loading) return <p className="u-text-center">Loading..</p>;
-    if (error) return <p className="u-text-center">Error: {error}</p>;
+    if (loading) return <p className="u-text-center">{t('loading')}</p>;
+    if (error) return <p className="u-text-center">{t('error')}: {error}</p>;
     if (!data) return null;
 
     return (
@@ -54,14 +56,14 @@ const JobDetails: React.FC = () => {
             <div className="description" dangerouslySetInnerHTML={{ __html: data.description }} />
 
             <div className="info-card">
-                <div><strong>location:</strong> {data.location}</div>
-                <div><strong>category:</strong> {data.categories}</div>
-                <div><strong>level:</strong> {data.level}</div>
-                <div><strong>employment:</strong> {data.employmentType}</div>
+                <div><strong>{t('location')}:</strong> {data.location}</div>
+                <div><strong>{t('category')}:</strong> {data.categories}</div>
+                <div><strong>{t('level')}:</strong> {data.level}</div>
+                <div><strong>{t('employment')}:</strong> {data.employmentType}</div>
             </div>
 
             <section>
-                <h3>Tasks</h3>
+                <h3>{t('tasks')}</h3>
                 <ul>
                     {data.tasks.map(tk => (
                         <li key={tk.id}>
@@ -72,7 +74,7 @@ const JobDetails: React.FC = () => {
             </section>
 
             <section>
-                <h3>Skills</h3>
+                <h3>{t('skills')}</h3>
                 <ul>
                     {data.skills.map(sk => (
                         <li key={sk.id}>
@@ -84,14 +86,14 @@ const JobDetails: React.FC = () => {
 
             {data.educationExperience && (
                 <section>
-                    <h3>Education</h3>
+                    <h3>{t('education')}</h3>
                     <p>{data.educationExperience}</p>
                 </section>
             )}
 
             <div className="divider" />
             <section className="contact">
-                <h3>Contacts</h3>
+                <h3>{t('contacts')}</h3>
                 <p><strong>{data.contactName}</strong> — {data.contactRole}</p>
                 <p>✉️<a href={`mailto:${data.contactEmail}`}>{data.contactEmail}</a></p>
             </section>

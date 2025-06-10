@@ -91,3 +91,21 @@
         display: block;
     }
 }
+
+.lang-flag-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+.lang-flag-btn img {
+    transition: transform 0.2s;
+}
+.lang-flag-btn:hover img,
+.lang-flag-btn:focus img {
+    transform: scale(1.15);
+}

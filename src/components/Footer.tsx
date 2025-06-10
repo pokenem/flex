@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { useLocale } from '../context/LocaleContext';
 
 const socialLinks = [
     { href: 'https://www.instagram.com/flexibilityservices', img: 'inst.svg', alt: 'Instagram' },
@@ -9,11 +10,12 @@ const socialLinks = [
 ];
 
 const Footer: React.FC = () => {
+    const { t } = useLocale();
     return (
         <footer className="footer">
             <div className="footer-left">
-                <p className={'font-light'}>Kontaktuj nás: info@mycompany.com</p>
-                <p className={'font-light'}>© 2025 Flexility Services</p>
+                <p className={'font-light'}>{t('footer.contact')}</p>
+                <p className={'font-light'}>{t('footer.copyright')}</p>
             </div>
             <div className="footer-right">
                 <ul className="social-list">

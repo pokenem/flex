@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Partners.css"
+import { useLocale } from '../../context/LocaleContext';
 
 export interface Company {
     id: number;
@@ -21,20 +22,23 @@ const companies: Company[] = [
 ];
 
 const Partners: React.FC = () => {
+    const { t } = useLocale();
     return (
         <div className="app-layout">
             <main className="app-main partners-page">
-                {/* Логотипы партнеров */}
-                <section className="partners-logos">
-                    <h2 className="title py-2">Naši partneri</h2>
-                    <div className="logos-grid">
-                        {companies.map(c => (
-                            <div key={c.id} className="logo-item">
-                                <img src={c.logoUrl} alt={c.name} className="logo-img" />
-                                <span className="logo-name font-light">{c.name}</span>
-                            </div>
-                        ))}
-                    </div>
+                <section className="partners-section">
+                    <div className="vyhody-title text-4xl font-medium">{t('partners.title')}</div>
+                    {/* Логотипы партнеров */}
+                    <section className="partners-logos">
+                        <div className="logos-grid">
+                            {companies.map(c => (
+                                <div key={c.id} className="logo-item">
+                                    <img src={c.logoUrl} alt={c.name} className="logo-img" />
+                                    <span className="logo-name font-light">{c.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
                 </section>
             </main>
         </div>

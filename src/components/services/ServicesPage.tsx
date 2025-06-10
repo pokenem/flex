@@ -1,20 +1,21 @@
-
 import ServiceCard from './ServiceCard';
 import './ServicesPage.css';
 import {useServices} from "../../context/ServiceContext";
+import { useLocale } from '../../context/LocaleContext';
 
 const ServicesPage: React.FC = () => {
     const services = useServices();
+    const { t } = useLocale();
 
     return (
-        <div className="services-page">
-            <div className="u-text-center font-bold text-4xl py-4">Naše služby</div>
+        <section className="services-section">
+            <h1 className="vyhody-title text-4xl font-medium">{t('services.title')}</h1>
             <div className="services-list">
                 {services.map((service, index) => (
                     <ServiceCard key={service.id} index={index} {...service} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
