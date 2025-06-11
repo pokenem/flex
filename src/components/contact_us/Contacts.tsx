@@ -21,25 +21,27 @@ const Contacts: React.FC = () => {
                     <ul className="info-list">
                         <li>
                             <Phone className="info-icon" />
-                            <div className={"text-xl font-regular"}><a href="tel:+66660850722">+66 66-085-0722</a></div>
-                        </li>
-                        <li>
-                            <Clock className="info-icon" />
-                            <div className={"text-xl font-regular"}>
-                                Pon-Ned: 9.00 - 17.00
-                            </div>
-                        </li>
-                        <li>
-                            <MapPin className="info-icon" />
-                            <div className={"text-xl font-regular"}>
-                                9603 Brewery Court South Ozone Park, NY 11420
-                            </div>
+                            <div className={"text-xl font-regular"}><a href="tel:+420774079615">Marek Řehák, (+420) 774079615</a></div>
                         </li>
                         <li>
                             <Mail className="info-icon" />
-                            <div className={"text-xl font-regular"}>
-                                <a href="mailto:flexibilityservices@gmail.com">flexibilityservices@gmail.com</a>
-                            </div>
+                            <div className={"text-xl font-regular"}><a href="mailto:marek.rehak@flexilityservices.cz">marek.rehak@flexilityservices.cz</a></div>
+                        </li>
+                        <li>
+                            <Phone className="info-icon" />
+                            <div className={"text-xl font-regular"}><a href="tel:+420734173237">Tomáš Latislav, (+420) 734 173 237</a></div>
+                        </li>
+                        <li>
+                            <Mail className="info-icon" />
+                            <div className={"text-xl font-regular"}><a href="mailto:tomas.latislav@flexilityservices.cz">tomas.latislav@flexilityservices.cz</a></div>
+                        </li>
+                        <li>
+                            <Mail className="info-icon" />
+                            <div className={"text-xl font-regular"}><a href="mailto:info@flexilityservices.cz">info@flexilityservices.cz</a></div>
+                        </li>
+                        <li>
+                            <MapPin className="info-icon" />
+                            <div className={"text-xl font-regular"}>V dolině 1515/1b, Michle (Praha 10), 101 00 Praha</div>
                         </li>
                     </ul>
                     <ul className="social-list">
@@ -54,7 +56,7 @@ const Contacts: React.FC = () => {
                 </div>
                 <div className="contacts-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.030723519528!2d-73.81437902419935!3d40.678210971393404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261f71a4a2675%3A0x611f65ae04921960!2s9603%20Brewery%20Ct%2C%20South%20Ozone%20Park%2C%20NY%2011420%2C%20USA!5e0!3m2!1sen!2sus!4v1716315201914!5m2!1sen!2sus"
+                        src="https://www.google.com/maps?q=V+dolin%C4%9B+1515%2F1b%2C+Michle+%28Praha+10%29%2C+101+00+Praha&output=embed"
                         width="100%"
                         height="450"
                         style={{ border: 0 }}

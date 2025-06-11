@@ -13,6 +13,7 @@ interface ServiceCardProps extends ServiceItem {
 const ServiceCard: React.FC<ServiceCardProps> = ({ id, title, description, imageUrl, index }) => {
     const navigate = useNavigate();
     const isEven = index % 2 === 0;
+    const { t } = useLocale();
 
     return (
         <motion.div
@@ -32,7 +33,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ id, title, description, image
                     dangerouslySetInnerHTML={{ __html: description }}
                 />
                 <button onClick={() => navigate('/contact-us')} className="contact-button">
-                    Kontakt
+                    {t('services.button')}
                 </button>
             </div>
         </motion.div>

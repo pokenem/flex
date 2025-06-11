@@ -93,7 +93,7 @@ const JobDetails: React.FC = () => {
 
             <div className="divider" />
             <section className="contact">
-                <h3>{t('contacts')}</h3>
+                <h3>{t('contacts.title')}</h3>
                 <p><strong>{data.contactName}</strong> — {data.contactRole}</p>
                 <p>✉️<a href={`mailto:${data.contactEmail}`}>{data.contactEmail}</a></p>
             </section>

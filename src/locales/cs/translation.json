@@ -9,7 +9,7 @@
     "jobs": "Kariéra"
   },
   "footer": {
-    "contact": "Kontaktuj nás: info@mycompany.com",
+    "contact": "Kontaktuj nás: info@flexilityservices.cz",
     "copyright": "© 2025 Flexility Services"
   },
   "loading": "Načítání...",
@@ -97,7 +97,13 @@
   },
   "services": {
     "title": "Naše služby",
-    "subtitle": "Komplexní nabídka pro vaše podnikání."
+    "subtitle": "Komplexní nabídka pro vaše podnikání.",
+    "button": "Kontaktovat",
+    "cards": [
+      {"title": "Service 1", "desc": "Description of service 1."},
+      {"title": "Service 2", "desc": "Description of service 2."},
+      {"title": "Service 3", "desc": "Description of service 3."}
+    ]
   },
   "partners": {
     "title": "Naši partneři"
