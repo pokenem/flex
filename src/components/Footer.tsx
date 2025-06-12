@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <div className="footer-left">
-                <p className={'font-light'}>{t('footer.contact')}</p>
-                <p className={'font-light'}>{t('footer.copyright')}</p>
+                <p className={'font-regular'}>{t('footer.contact')}</p>
+                <p className={'font-regular'}>{t('footer.copyright')}</p>
             </div>
             <div className="footer-right">
                 <ul className="social-list">

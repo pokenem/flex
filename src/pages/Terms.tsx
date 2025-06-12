@@ -17,7 +17,7 @@ const Terms: React.FC = () => {
                 {[0,1,2,3,4].map(i => (
                     <section className="u-mb-1" key={i}>
                         <h2 className="text-2xl font-regular u-mb-1">{t(`terms.sections.${i}.title`)}</h2>
-                        <p className="text-base font-light">{t(`terms.sections.${i}.text`)}</p>
+                        <p className="text-base font-regular">{t(`terms.sections.${i}.text`)}</p>
                     </section>
                 ))}
             </div>

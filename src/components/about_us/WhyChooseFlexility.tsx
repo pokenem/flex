@@ -24,8 +24,8 @@ const WhyChooseFlexility: React.FC = () => {
                 {items.map(({ title, desc, Icon }, i) => (
                     <div className="why-choose__card" key={i}>
                         <Icon className="why-choose__icon" />
-                        <h3 className="why-choose__card-title font-regular text-xl">{title}</h3>
-                        <p className="why-choose__card-desc font-thin text-base">{desc}</p>
+                        <h3 className="why-choose__card-title font-medium text-xl">{title}</h3>
+                        <p className="why-choose__card-desc font-regular text-base">{desc}</p>
                     </div>
                 ))}
             </div>

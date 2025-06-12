@@ -12,10 +12,10 @@ const OnasSection: React.FC = () => {
             </motion.div>
             <div className="onas-content">
                 <motion.h2 className="onas-title text-4xl font-medium" initial={{opacity:0, y:30}} animate={{opacity:1, y:0}} transition={{duration:1}}>{t('companyName')}</motion.h2>
-                <motion.p className="onas-subtitle text-xl font-light" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:0.2}}>
+                <motion.p className="onas-subtitle text-xl font-regular" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:0.2}}>
                     {t('onas.subtitle')}
                 </motion.p>
-                <motion.p className="onas-text text-base font-light" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:0.3}}>
+                <motion.p className="onas-text text-base font-regular" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:0.3}}>
                     {t('onas.text')}
                 </motion.p>
             </div>

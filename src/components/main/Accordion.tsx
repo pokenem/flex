@@ -37,7 +37,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
                         className={`accordion-content ${openId === item.id ? 'open' : ''}`}
                     >
                         <div
-                            className="text-xl font-light"
+                            className="text-xl font-regular"
                             dangerouslySetInnerHTML={{ __html: item.description }}
                         />
                     </div>

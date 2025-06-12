@@ -36,8 +36,8 @@ const ContactCards: React.FC = () => {
                 {info.map(({ icon, title, details }, index) => (
                     <div key={index} className="contact-card">
                         <div className="icon">{icon}</div>
-                        <h3 className="title">{title}</h3>
-                        <p className="details">{details}</p>
+                        <h3 className="title font-medium">{title}</h3>
+                        <p className="details font-regular">{details}</p>
                     </div>
                 ))}
             </section>

@@ -32,7 +32,7 @@ const ZkusenostiSection: React.FC = () => {
                     >
                         <img src={z.image} alt={z.title} className="zkusenosti-img" />
                         <h3 className="zkusenosti-card-title text-xl font-regular">{z.title}</h3>
-                        <div className="zkusenosti-card-desc text-base font-thin" dangerouslySetInnerHTML={{__html: z.text}} />
+                        <div className="zkusenosti-card-desc text-base font-regular" dangerouslySetInnerHTML={{__html: z.text}} />
                     </motion.div>
                 ))}
             </div>

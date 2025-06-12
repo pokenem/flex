@@ -51,34 +51,34 @@ const JobDetails: React.FC = () => {
 
     return (
         <main className="app-main job-page">
-            <h1>{data.title}</h1>
-            <h2>{data.subtitle}</h2>
-            <div className="description" dangerouslySetInnerHTML={{ __html: data.description }} />
+            <h1 className="font-medium text-4xl u-mb-1">{data.title}</h1>
+            <h2 className="font-medium text-2xl u-mb-1">{data.subtitle}</h2>
+            <div className="description font-regular" dangerouslySetInnerHTML={{ __html: data.description }} />
 
             <div className="info-card">
-                <div><strong>{t('location')}:</strong> {data.location}</div>
-                <div><strong>{t('category')}:</strong> {data.categories}</div>
-                <div><strong>{t('level')}:</strong> {data.level}</div>
-                <div><strong>{t('employment')}:</strong> {data.employmentType}</div>
+                <div><span className="font-medium">{t('location')}:</span> <span className="font-regular">{data.location}</span></div>
+                <div><span className="font-medium">{t('category')}:</span> <span className="font-regular">{data.categories}</span></div>
+                <div><span className="font-medium">{t('level')}:</span> <span className="font-regular">{data.level}</span></div>
+                <div><span className="font-medium">{t('employment')}:</span> <span className="font-regular">{data.employmentType}</span></div>
             </div>
 
             <section>
-                <h3>{t('tasks')}</h3>
+                <h3 className="font-medium text-xl u-mb-1">{t('tasks')}</h3>
                 <ul>
                     {data.tasks.map(tk => (
                         <li key={tk.id}>
-                            <strong>{tk.title}:</strong> {tk.details}
+                            <span className="font-medium">{tk.title}:</span> <span className="font-regular">{tk.details}</span>
                         </li>
                     ))}
                 </ul>
             </section>
 
             <section>
-                <h3>{t('skills')}</h3>
+                <h3 className="font-medium text-xl u-mb-1">{t('skills')}</h3>
                 <ul>
                     {data.skills.map(sk => (
                         <li key={sk.id}>
-                            <strong>{sk.title}:</strong> {sk.details}
+                            <span className="font-medium">{sk.title}:</span> <span className="font-regular">{sk.details}</span>
                         </li>
                     ))}
                 </ul>
@@ -86,16 +86,16 @@ const JobDetails: React.FC = () => {
 
             {data.educationExperience && (
                 <section>
-                    <h3>{t('education')}</h3>
-                    <p>{data.educationExperience}</p>
+                    <h3 className="font-medium text-xl u-mb-1">{t('education')}</h3>
+                    <p className="font-regular">{data.educationExperience}</p>
                 </section>
             )}
 
             <div className="divider" />
             <section className="contact">
-                <h3>{t('contacts.title')}</h3>
-                <p><strong>{data.contactName}</strong> — {data.contactRole}</p>
-                <p>✉️<a href={`mailto:${data.contactEmail}`}>{data.contactEmail}</a></p>
+                <h3 className="font-medium text-xl u-mb-1">{t('contacts.title')}</h3>
+                <p><span className="font-medium">{data.contactName}</span> <span className="font-regular">— {data.contactRole}</span></p>
+                <p className="font-regular">✉️<a href={`mailto:${data.contactEmail}`}>{data.contactEmail}</a></p>
             </section>
         </main>
     );

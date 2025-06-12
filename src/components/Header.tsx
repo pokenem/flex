@@ -25,7 +25,7 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <Link to={"/"} className={"logo-section"}>
-                <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="logo" className="logo" />
+                <img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" className="logo" />
                 <div className="company-name">{t('companyName')}</div>
             </Link>
 

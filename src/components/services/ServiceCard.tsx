@@ -29,7 +29,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ id, title, description, image
             <div className="service-details">
                 <div className={"text-3xl font-medium"}>{title}</div>
                 <div
-                    className="text-xl font-light"
+                    className="text-xl font-regular"
                     dangerouslySetInnerHTML={{ __html: description }}
                 />
                 <button onClick={() => navigate('/contact-us')} className="contact-button">

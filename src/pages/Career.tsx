@@ -71,7 +71,7 @@ const Career: React.FC = () => {
                                 <Link to={`/jobs/${job.slug}`}>
                                     <div>
                                         <h2 className="text-3xl font-medium u-mb-1">{job.title}</h2>
-                                        <div className="text-base">
+                                        <div className="text-base font-regular">
                                             {job.location} | {job.categories} | {job.level}
                                         </div>
                                     </div>

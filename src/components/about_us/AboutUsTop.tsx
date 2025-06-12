@@ -20,7 +20,7 @@ const AboutUsTop: React.FC = () => {
             </div>
             <div className="text-container">
                 <h2 className="text-4xl font-medium">{t("about.title")}</h2>
-                <p className="text-xl font-light">
+                <p className="text-xl font-regular">
                     {t("about.details")}
                 </p>
             </div>

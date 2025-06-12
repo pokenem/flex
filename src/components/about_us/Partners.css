@@ -43,12 +43,10 @@
 .logo-name {
     font-size: 0.875rem;
     text-align: center;
-    color: #333;
 }
 
 /* Стили футера */
 .partners-footer {
-    background-color: #222;
     color: #fff;
     padding: 1rem;
     text-align: center;

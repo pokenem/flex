@@ -42,8 +42,8 @@ const VyhodySection: React.FC = () => {
                         viewport={{ once: true, amount: 0.3 }}
                     >
                         <Icon className="vyhody-icon" size={40} />
-                        <h3 className="vyhody-card-title text-xl font-regular">{title}</h3>
-                        <p className="vyhody-card-desc text-base font-thin">{description}</p>
+                        <h3 className="vyhody-card-title text-xl font-medium">{title}</h3>
+                        <p className="vyhody-card-desc text-base font-regular">{description}</p>
                     </motion.div>
                 ))}
             </div>

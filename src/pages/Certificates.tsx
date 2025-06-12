@@ -9,6 +9,12 @@ const certificates = [
     preview: process.env.PUBLIC_URL + '/assets/certificates/sert1.jpg',
     file: process.env.PUBLIC_URL + '/assets/certificates/sert1.pdf',
   },
+  {
+    id: 2,
+    title: 'certificates.sert1',
+    preview: process.env.PUBLIC_URL + '/assets/certificates/sert2.jpg',
+    file: process.env.PUBLIC_URL + '/assets/certificates/sert2.pdf',
+  },
   // Добавьте новые сертификаты по аналогии
 ];
 
