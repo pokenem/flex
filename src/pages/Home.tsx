@@ -35,21 +35,21 @@ const HomePage: React.FC = () => {
             <motion.div initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0}} transition={{duration: 1, delay: 0.2}}>
                 <VyhodySection />
             </motion.div>
-            <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 0.8}}>
+            <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 0.2}}>
                 <div className="glass-container py-4">
                     <Partners/>
                 </div>
             </motion.div>
-            <motion.div initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0}} transition={{duration: 1, delay: 0.4}}>
+            <motion.div initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0}} transition={{duration: 1, delay: 0.2}}>
                 <ZkusenostiSection />
             </motion.div>
-            <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 0.6}}>
+            <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 0.2}}>
                 <div className="glass-container u-mb-2">
                     <div className="u-text-center font-bold text-4xl py-4">{t('services.title')}</div>
                     <Accordion items={services}/>
                 </div>
             </motion.div>
-            <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 1}}>
+            <motion.div initial={{opacity: 0, y: 40}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.3}} transition={{duration: 1, delay: 0.2}}>
                 <div className="glass-container py-4">
                     <Contacts/>
                 </div>

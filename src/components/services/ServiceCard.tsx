@@ -20,7 +20,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ id, title, description, image
             className="service-card"
             initial={{ x: isEven ? 200 : -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.1, type: 'spring' }}
+            transition={{ duration: 0.6, delay: 0.1, type: 'spring' }}
             viewport={{ once: true, amount: 0.3 }}
         >
             <div className="service-image">
