@@ -11,6 +11,7 @@ import Terms from './pages/Terms';
 import Career from "./pages/Career";
 import JobDetails from "./components/JobDetails";
 import { LocaleProvider } from './context/LocaleContext';
+import Certificates from './pages/Certificates';
 
 const App: React.FC = () => (
     <LocaleProvider>
@@ -26,6 +27,7 @@ const App: React.FC = () => (
                         <Route path="/terms" element={<Terms />} />
                         <Route path="/jobs" element={<Career />} />
                         <Route path="/jobs/:slug" element={<JobDetails />} />
+                        <Route path="/certificates" element={<Certificates />} />
                     </Routes>
                 </main>
                 <Footer />

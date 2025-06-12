@@ -6,7 +6,8 @@
     "about": "O nás",
     "contact": "Kontakt",
     "terms": "Obchodní podmínky",
-    "jobs": "Kariéra"
+    "jobs": "Kariéra",
+    "certificates": "Certifikáty"
   },
   "footer": {
     "contact": "Kontaktuj nás: info@flexilityservices.cz",
@@ -107,5 +108,9 @@
   },
   "partners": {
     "title": "Naši partneři"
+  },
+  "certificates": {
+    "title": "Certifikáty",
+    "sert1": "Certifikát 1"
   }
 } 

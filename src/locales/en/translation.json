@@ -4,6 +4,7 @@
     "home": "Home",
     "services": "Services",
     "about": "About Us",
+    "certificates": "Certificates",
     "contact": "Contact Us",
     "terms": "Terms & Conditions",
     "jobs": "Career"
@@ -107,5 +108,9 @@
       {"title": "Email"},
       {"title": "Phone"}
     ]
+  },
+  "certificates": {
+    "title": "Certificates",
+    "sert1": "Certificate 1"
   }
 }

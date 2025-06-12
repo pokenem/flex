@@ -34,6 +34,7 @@ const Header: React.FC = () => {
                     { to: '/', label: t('menu.home') },
                     { to: '/services', label: t('menu.services') },
                     { to: '/about-us', label: t('menu.about') },
+                    { to: '/certificates', label: t('menu.certificates') },
                     { to: '/contact-us', label: t('menu.contact') },
                     { to: '/terms', label: t('menu.terms') },
                     { to: '/jobs', label: t('menu.jobs') },
